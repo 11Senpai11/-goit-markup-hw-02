@@ -1,12 +1,14 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2E2F42;
+    color: #434455;
+    background-color: #FFFFFF;
 }
-a {
-    text-decoration: none;
+
+.link {
+text-decoration: none;
 }
-ul li {
-list-style-type: none;
+.list {
+list-style: none;
 }
 /**
   |============================
@@ -18,9 +20,7 @@ font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
-    display: flex;
-    align-items: center;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
@@ -28,7 +28,8 @@ font-family: 'Raleway',sans-serif;
 .logo-studio {
    color: #2E2F42;
 }
-.nav-link {
+
+.list-link {
     font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -36,8 +37,11 @@ font-family: 'Raleway',sans-serif;
         letter-spacing: 0.02em;
         color: #2E2F42;
 }
-.nav-link:hover, .nav-link:focus {
+.list-link:hover, .list-link:focus {
         color: #404BBF;
+}
+.address-header {
+    font-style: normal;
 }
 .address-link {
     font-style: normal;
@@ -56,12 +60,14 @@ font-family: 'Raleway',sans-serif;
   |============================
 */
 /* hero */
+.hero {
+    background-color: #2e2f42;
+}
 .hero-title {
-background-color: #2E2F42;
 font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
@@ -69,12 +75,11 @@ font-style: normal;
 .hero-button {
     background-color: #4D5AE5;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
-        align-items: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
 }
@@ -83,11 +88,9 @@ font-style: normal;
 }
 /* section */
 .section-title {
-    font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
-        text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
@@ -106,6 +109,18 @@ font-style: normal;
     letter-spacing: 0.02em;
     color: #434455;
 }
+.our-team {
+    background-color: #F4F4FD;
+}
+.our-team-list {
+    background-color:#FFFFFF ;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing:0.02em ;
+}
 .team-position {
         font-size: 16px;
         line-height: 1.5;
@@ -117,6 +132,9 @@ font-style: normal;
   | footer
   |============================
 */
+.footer-basic {
+background-color: #2E2F42;
+}
 .footer-paragraph {
     font-size: 16px;
     line-height: 1.5; 
@@ -124,6 +142,9 @@ font-style: normal;
     color: #F4F4FD;
     background-color: #2E2F42;
 }
+.footer-logo-studio {
+    color:#f4f4fd ;
+} 
 
 
 /**
@@ -132,18 +153,19 @@ font-style: normal;
   |============================
 */
 /* button */
-.portfolio-button-all {
+.portfolio-button {
+   font-family:"Roboto", sans-serif ;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #4d5ae5;
+   background-color:#F4F4FD ;
+   cursor: pointer;
+}
+.portfolio-button:hover , .portfolio-button:focus {
+    color:#FFFFFF ;
     background-color: #404BBF;
-    cursor: pointer;
-font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
 }
 .portfolio-button {
     cursor: pointer;
@@ -151,25 +173,8 @@ font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
-        align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
         color: #4D5AE5;
     background-color:#E7E9FC ;
-}
-/* div */
-.example-works {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-}
-.example-works-specialty {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
