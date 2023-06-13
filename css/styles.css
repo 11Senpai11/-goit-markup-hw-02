@@ -10,6 +10,9 @@ text-decoration: none;
 .list {
 list-style: none;
 }
+:root {
+    --primary-font: 'Roboto', sans-serif;
+}
 /**
   |============================
   | header
@@ -92,6 +95,7 @@ font-style: normal;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        text-align: center;
         text-transform: capitalize;
         color: #2E2F42;
 }
@@ -120,6 +124,7 @@ font-style: normal;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing:0.02em ;
+    color:#2e2f42 ;
 }
 .team-position {
         font-size: 16px;
@@ -160,7 +165,7 @@ background-color: #2E2F42;
    line-height: 1.5;
    letter-spacing: 0.04em;
    color: #4d5ae5;
-   background-color:#F4F4FD ;
+   background-color:#F4F4FD;
    cursor: pointer;
 }
 .portfolio-button:hover , .portfolio-button:focus {
