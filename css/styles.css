@@ -13,6 +13,11 @@ list-style: none;
 :root {
     --primary-font: 'Roboto', sans-serif;
     --primary-white-color: #F4F4FD;
+    --primary-blue-color: #404BBF;
+    --primary-link-color: #2E2F42;
+    --address-link: #434455;
+    --white-ol: #FFFFFF;
+    --background-color: #4D5AE5;
 }
 /**
   |============================
@@ -27,10 +32,10 @@ font-family: 'Raleway',sans-serif;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--primary-blue-color);
 }
 .logo-studio {
-   color: #2E2F42;
+   color: var(--primary-link-color);
 }
 
 .list-link {
@@ -39,10 +44,10 @@ font-family: 'Raleway',sans-serif;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--primary-link-color);
 }
 .list-link:hover, .list-link:focus {
-        color: #404BBF;
+        color: var(--primary-link-color);
 }
 .address-header {
     font-style: normal;
@@ -53,10 +58,10 @@ font-family: 'Raleway',sans-serif;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--address-link);
 }
 .address-link:hover, :focus {
-        color: #404BBF;
+        color: var(--primary-blue-color);
 }
 /**
   |============================
@@ -65,7 +70,7 @@ font-family: 'Raleway',sans-serif;
 */
 /* hero */
 .hero {
-    background-color: #2e2f42;
+    background-color: var(--primary-link-color);
 }
 .hero-title {
 font-style: normal;
@@ -74,10 +79,10 @@ font-style: normal;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-ol);
 }
 .hero-button {
-    background-color: #4D5AE5;
+    background-color: var(--background-color);
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -85,10 +90,10 @@ font-style: normal;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: var(--white-ol);
 }
 .hero-button:hover, .hero-button:focus {
-    background-color: #404BBF;
+    background-color: var(--primary-blue-color);
 }
 /* section */
 .section-title {
@@ -98,7 +103,7 @@ font-style: normal;
         letter-spacing: 0.02em;
         text-align: center;
         text-transform: capitalize;
-        color: #2E2F42;
+        color: var(--primary-link-color);
 }
 .features-title {
     font-style: normal;
@@ -106,32 +111,32 @@ font-style: normal;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;  
-        color: #2E2F42;
+        color: var(--primary-link-color);
 }
 .features-paragraph {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--address-link);
 }
 .our-team {
-    background-color: #F4F4FD;
+    background-color: var(--primary-white-color);
 }
 .our-team-list {
-    background-color:#FFFFFF ;
+    background-color: var(--white-ol) ;
 }
 .team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing:0.02em ;
-    color:#2e2f42 ;
+    color: var(--primary-link-color);
 }
 .team-position {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--address-link);
 }
 /**
   |============================
@@ -139,17 +144,17 @@ font-style: normal;
   |============================
 */
 .footer-basic {
-background-color: #2E2F42;
+background-color: var(--primary-link-color);
 }
 .footer-paragraph {
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    color: #F4F4FD;
-    background-color: #2E2F42;
+    color: var(--primary-white-color);
+    background-color: var(--primary-link-color);
 }
 .footer-logo-studio {
-    color:#f4f4fd ;
+    color: var(--primary-white-color);
 } 
 
 
@@ -165,22 +170,11 @@ background-color: #2E2F42;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.04em;
-   color: #4d5ae5;
-   background-color:var(--primary-white-color);
-   cursor: pointer;
+   color: var(--background-color);
+   background-color: var(--primary-white-color);
+   cursor: pointer
 }
 .portfolio-button:hover , .portfolio-button:focus {
-    color:#FFFFFF ;
-    background-color: #404BBF;
-}
-.portfolio-button {
-    cursor: pointer;
-    font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: #4D5AE5;
-    background-color:#E7E9FC ;
+    color: var(--primary-white-color) ;
+    background-color: var(--primary-blue-color);
 }
